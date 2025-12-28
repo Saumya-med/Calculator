@@ -1,0 +1,79 @@
+package com.example.chatapp;
+
+public class messages {
+    int senderID;
+    int receiverID;
+    String text;
+    int seen_time;
+    int del_time;
+    int sent_time;
+    int msg_id;
+
+    //Default constructor
+    messages(){}
+
+    //Parametrized constructor - TODO
+    messages(int senderID,int receiverID,String text,int seen_time,int del_time,int sent_time,int msg_id)
+        this.senderID = senderID;
+        this.receiverID = receiverID;
+        this.text = text;
+        this.seen_time = seen_time;
+        this.del_time = del_time;
+        this.sent_time = sent_time;
+        this.msg_id = msg_id;
+}
+
+    int getSenderID() {
+        return this.senderID;
+    }
+    void setSenderID(int senderID) {
+        this.senderID = senderID;
+    }
+
+    int getReceiverID() {
+        return this.ReceiverID;
+    }
+    void setReceiverID(int receiverID) {
+        this.ReceiverID = ReceiverID;
+    }
+
+    String getText() {
+        return this.text;
+    }
+    void setText(String text) {
+        this.text = text;
+    }
+
+    int getSeen_time() {
+        return this.seen_time;
+    }
+    void setSeen_time(int seen_time) {
+        this.seen_time = seen_time;
+    }
+
+    int getDel_time() {
+        return this.del_time;
+    }
+    void setDel_time(int del_time) {
+        this.del_time = del_time;
+    }
+
+    int getSent_time() {
+        return this.sent_time;
+    }
+    void setSent_time(int sent_time) {
+        this.sent_time = sent_time;
+    }
+
+    int getMsg_id() {
+        return this.msg_id;
+    }
+    void setMsg_id(int msg_id) {
+        this.msg_id = msg_id;
+    }
+    public static void main(String[] args) {
+        messages msg1 = new messages(); // default constructor
+        messages msg2 = new messages(senderID:1, receiverID:2, text:"Hello", seen_time:001, del_time:
+        002, sent_time:003, msg_id:1); //parametrized constructor
+    }
+}
